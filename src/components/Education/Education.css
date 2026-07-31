@@ -1,0 +1,221 @@
+#education {
+
+  padding: 10px 10%;
+
+  background: #050505;
+
+  color: white;
+
+}
+
+
+/* Heading */
+
+#education h1 {
+
+  text-align: center;
+
+  font-size: 45px;
+
+  margin-bottom: 45px;
+
+  background: linear-gradient(
+    90deg,
+    #8b7cff,
+    #00e5c3
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+}
+
+
+/* Container */
+
+.education-container {
+
+  max-width: 850px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+
+  position: relative;
+
+}
+
+
+/* Timeline Line */
+
+.education-container::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 12px;
+
+  top: 0;
+
+  height: 100%;
+
+  width: 2px;
+
+  background: #8b7cff;
+
+}
+
+
+/* Card */
+
+.education-card {
+
+  position: relative;
+
+  margin-left: 40px;
+
+  padding: 25px 30px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.3s ease;
+
+}
+
+
+.education-card:hover {
+
+  transform: translateY(-5px);
+
+  border-color: #00e5c3;
+
+}
+
+
+/* Dot */
+
+.education-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: -35px;
+
+  top: 35px;
+
+  width: 14px;
+
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #00e5c3;
+
+  box-shadow: 0 0 15px #00e5c3;
+
+}
+
+
+/* Text */
+
+.education-card h2 {
+
+  color: #00e5c3;
+
+  font-size: 22px;
+
+  margin-bottom: 12px;
+
+}
+
+
+.education-card p {
+
+  color: #bbb;
+
+  line-height: 1.6;
+
+}
+
+
+
+/* Year and Score */
+
+.education-info {
+
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 18px;
+
+}
+
+
+.education-info span {
+
+  padding: 7px 16px;
+
+  border-radius: 20px;
+
+  background: rgba(139,124,255,0.15);
+
+  color: #8b7cff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  #education {
+
+    padding:70px 5%;
+
+  }
+
+
+  .education-card {
+
+    margin-left: 30px;
+
+    padding: 22px;
+
+  }
+
+
+  .education-card h2 {
+
+    font-size: 20px;
+
+  }
+
+
+  .education-info {
+
+    flex-direction: column;
+
+    gap: 10px;
+
+  }
+
+}

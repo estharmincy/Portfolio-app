@@ -1,0 +1,196 @@
+#projects {
+
+
+  padding: 30px 10%;
+
+  background: #050505;
+
+  color: white;
+
+}
+
+#projects h1 {
+
+  text-align: center;
+
+  font-size: 45px;
+
+  margin-bottom: 50px;
+
+  background: linear-gradient(
+    90deg,
+    #8b7cff,
+    #00e5c3
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+}
+
+.projects-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 35px;
+
+}
+
+.project-card {
+
+  padding: 35px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(15px);
+
+  transition: 0.3s ease;
+
+}
+
+.project-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #8b7cff;
+
+}
+
+.project-card h2 {
+
+  color: #00e5c3;
+
+  font-size: 26px;
+
+  margin-bottom: 18px;
+
+}
+.project-card h3 {
+
+  color:#dad9df;
+
+  font-size:18px;
+
+  margin-top:20px;
+
+  margin-bottom:10px;
+
+}
+.project-card p {
+
+  color: #bbb;
+
+  line-height: 1.8;
+
+  margin-bottom: 20px;
+
+}
+
+.project-card span {
+
+  display: inline-block;
+
+  padding: 8px 18px;
+
+  border-radius: 20px;
+
+  background: rgba(139,124,255,0.15);
+
+  color: #8b7cff;
+
+  font-size: 14px;
+
+}
+
+@media (max-width:768px) {
+
+  #projects {
+
+    padding: 70px 5%;
+
+  }
+
+  .projects-container {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+/* Project Buttons */
+
+.project-buttons {
+
+  display:flex;
+
+  gap:15px;
+
+  margin-top:25px;
+
+}
+
+
+
+.project-buttons a {
+
+  padding:10px 25px;
+
+  border-radius:25px;
+
+  text-decoration:none;
+
+  font-size:14px;
+
+  font-weight:600;
+
+  color:white;
+
+  background:linear-gradient(
+    90deg,
+    #8b7cff,
+    #00e5c3
+  );
+
+  transition:0.3s ease;
+
+}
+
+
+
+.project-buttons a:hover {
+
+  transform:translateY(-5px);
+
+  box-shadow:
+  0 10px 25px rgba(0,229,195,0.3);
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .project-buttons{
+
+    flex-direction:column;
+
+  }
+
+
+  .project-buttons a{
+
+    text-align:center;
+
+  }
+
+}
