@@ -16,13 +16,17 @@ function Contact() {
           </p>
 
           <div className="contact-details">
-
-            <p>
-              📧 Email:{" "}
-              <a href="mailto:estharmincy@gmail.com">
-                estharmincy@gmail.com
-              </a>
-            </p>
+<p>
+  📧 Email:{" "}
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=estharmincy@gmail.com"
+    target="_blank"
+    rel="noreferrer"
+  >
+    estharmincy@gmail.com
+  </a>
+</p>
+            
 
             <p>
               💻 GitHub:{" "}
